@@ -74,19 +74,22 @@
       <div class="col-xs-12 col-md-6"> <img src="img/relleno.jpg" class="img-responsive" alt=""> </div>
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+          <p>Hola bienvenidos a mi portafolio, Me llamo David castro soy programador web freelance Nicaraguense, tengo 19 años, me especializo en javaScript y tengo mas de un año y medio de experiencia en el mundo de la tecnologia web, manejo el area Backend y frontend</p>
+          <p>He trabajado en varios proyectos independientes, lo cuales me han ayudado a aprendar con el transcurso, Soy una persona que le gusta aprender cada vez mas. Amo el codigo limpio</p>
           <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Mi Portafolio</a> </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Portfolio Section -->
-<div id="portfolio">
+<div style="background-color:#111;" id="portfolio">
   <h1 class="h1Stack" >Mi Portafolio</h1>
   <div class="justificado marginB3">
   </div>
-  <h2 class="h1Stack" >Tecnologias y librerias que manejo</h2>
+  <h2 class="h1Stack marginB3" >Tecnologias y librerias que manejo</h2>
+  <div class="justificado marginB3">
+    <a class="btn-custom" href="#mainProyectos">Ver proyectos</a>
+  </div>
   <main class="displaygrid marginB3 padding1">
   <div>
     <img src="./img/portfolio/javaScript.png" alt="">
@@ -111,6 +114,10 @@
   <div>
     <img src="./img/portfolio/express.png" alt="">
     <p>Express</p>
+  </div>
+  <div>
+    <img src="./img/portfolio/jsonwebtoken.png" alt="">
+    <p>Json Web Token</p>
   </div>
   <div>
     <img src="./img/portfolio/postgresql.png" alt="">
@@ -139,79 +146,54 @@
  </main>
 
  <main style="background-color: black;" class="padding1" id="mainProyectos">
- <div class="justificado marginB3">
-  <button class="btn-custom" >Trabajos independientes</button>
+ <div style="margin-bottom:10rem;" class="justificado">
 </div>
 <h2 class="h1Stack" >Aqui veras mis proyectos independientes mas importantes </h2>
 
-<h3 class="h1Stack">Ecommerce</h3>
+<h3 class="h1Stack marginB3">Ecommerce</h3>
 <div class="displaygrid marginB3">
   <img src="./img/portfolio/ecommerce.png" alt="">
   <article>
     <p>Ecommerce desarrollado desde cero con codigo puro, utiliza tecnologias como ReactJS, NodeJS, Express, Etc. <br> hace uso de librerias css como material ui, utiliza cookies y pasarela de pago</p>
-    <a class="btn-custom" href="https://shope-commerce.onrender.com">Ir al Ecommerce</a>
+    <a class="btn-custom" target="blank" href="https://shop-ecommerce.onrender.com">Ir al Ecommerce</a>
   </article>
 </div>
 
-<h3 class="h1Stack">Juego multijugador en tiempo real</h3>
+<h3 class="h1Stack marginB3">Juego multijugador en tiempo real</h3>
 <div class="displaygrid marginB3">
   <img src="./img/portfolio/game2.png" alt="">
   <img src="./img/portfolio/game1.png" alt="">
   <img src="./img/portfolio/game3.png" alt="">
   <article>
     <p>Juego que utiliza socket.io para establecer comunicacion en tiempo real con otros jugadores <br>Desarrollado en base NodeJS y Express con con Frontend vanilla javascript</p>
-    <a class="btn-custom" href="https://game-memory.onrender.com">Probar el juego</a>
+    <a class="btn-custom" target="blank" href="https://game-memory.onrender.com">Probar el juego</a>
   </article>
 </div>
+<h3 class="h1Stack marginB3">Sitio web de peliculas</h3>
 <div class="displaygrid marginB3">
-  <img src="./img/portfolio/game2.png" alt="">
-  <img src="./img/portfolio/game1.png" alt="">
   <article>
     <p>Sitio web de peliculas al estilo cine calidad <br>Utiliza api de movie DB, en base con nodeJS y Express, con frontend echo con ReactJS</p>
-    <a class="btn-custom" href="https://cine-poli-hd.onrender.com">ir a cine poli</a>
+    <a class="btn-custom" target="blank" href="https://cinepoli-hd.onrender.com">ir a cine poli</a>
   </article>
+  <img src="./img/portfolio/cinepoli.JPG" alt="">
+  <img src="./img/portfolio/cinepoli3.JPG" alt="">
 </div>
 </main>
      </main>
-
-
 </div>
 <!-- Contact Section -->
 <div id="contact" class="text-center">
   <div class="container">
     <div class="section-title center">
-      <h2>Get In Touch</h2>
+      <h2>Ponte en contacto con migo</h2>
       <hr>
     </div>
-    <div class="col-md-8 col-md-offset-2">
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default btn-lg">Send Message</button>
-      </form>
       <div class="social">
         <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
-          <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100009332483922" target="blank"><i class="fa fa-facebook"></i>Facebook</a></li>
+          <li><a href="https://wa.pe/David50512" target="blank"><i class="fa fa-whatsapp"></i>WhatsApp</a></li>
+          <li><a href="https://github.com/DavidCastro1229" target="blank"><i class="fa fa-github"></i>GitHub</a></li>
+          <li><a href="https://davidCastro505personal@gmail.com" target="blank"><i class="fa fa-google"></i>Correo</a></li>
         </ul>
       </div>
     </div>
@@ -220,7 +202,7 @@
 <div id="footer">
   <div class="container text-center">
     <div class="fnav">
-      <p>Copyright &copy; 2018 Hangover. Designed by <a href="https://codelatte.org/" rel="nofollow">Codelatte</a>.</p>
+      <p>Copyright &copy; 2022 Portafolio echo por David Castro <a href="https://wa.pe/David50512" rel="nofollow">WhatsApp</a>.</p>
     </div>
   </div>
 </div>
