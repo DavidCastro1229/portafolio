@@ -8,7 +8,7 @@ body, html {
 }
 .displaygrid{
 	display: grid;
-	gap:1rem;
+	gap:3rem;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
 }
 .padding1{
@@ -18,11 +18,18 @@ body, html {
 	width: 100%;
 	height: 14rem;
 }
+.displaygrid div{
+	display: grid;
+	row-gap: 1.5rem;
+	background-color: #111;
+}
 .displaygrid article{
 	display: flex;
+	position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	color: white;
 }
 .h1Stack{
 	color:white;
@@ -32,9 +39,10 @@ body, html {
 	display:flex;
 	justify-content: space-evenly;
 }
-.displaygrid p{
-	color:white;
-	text-align: center;
+.displaygrid h4{
+    color: white;
+    font-family: fantasy;
+    text-align: center;
 }
 #mainProyectos img{
 	height:31rem;
